@@ -6,6 +6,9 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
+/**
+ * Mintable immutable agreements, using zero-knowledge proofs as signature between parts.
+ */
 contract SaulGoodmanAgreements is ERC721, ERC721URIStorage, ERC721Burnable {
     event AgreementCreation(address indexed account, uint256 tokenId, string uri);
     event AgreementBurn(address indexed account, uint256 tokenId, string uri);

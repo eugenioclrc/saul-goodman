@@ -36,6 +36,12 @@ module.exports = {
       "SaulGoodmanAgreements",
     ]
   },
+  etherscan: {
+    apiKey: {
+      polygonMumbai: process.env.ETHERSCANKEY,
+      polygon: process.env.ETHERSCANKEY,
+    },
+  },
   networks: {
     hardhat: {
       chainId: 31337,
