@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build --output public",
+    "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "prepare": "svelte-kit sync",
@@ -14,7 +14,6 @@
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
-    "@types/cookie": "^0.4.1",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
     "autoprefixer": "^10.4.4",
@@ -32,12 +31,8 @@
   "type": "module",
   "dependencies": {
     "@bytemd/plugin-gfm": "^1.13.0",
-    "@fontsource/fira-mono": "^4.5.7",
-    "@lukeed/uuid": "^2.0.0",
     "bytemd": "^1.13.0",
-    "cookie": "^0.4.1",
     "daisyui": "^2.13.6",
-    "ethers": "^5.6.2",
-    "ipfs-core": "^0.14.1"
+    "ethers": "^5.6.2"
   }
 }
