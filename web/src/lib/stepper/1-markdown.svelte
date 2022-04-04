@@ -4,19 +4,31 @@
   import '../../markdown.css';
 
   import { Editor, Viewer } from 'bytemd'
-  import gfm from '@bytemd/plugin-gfm'
+  // import gfm from '@bytemd/plugin-gfm'
 
 	import { createEventDispatcher } from 'svelte';
+
+  import { onMount } from 'svelte';
 
   
   let value
   const plugins = [
-    gfm(),
+    // gfm(),
     // Add more plugins here
   ]
-  
+
+  onMount(() => {
+    try {
+      value = localStorage.getItem('contract');
+    } catch(err) {}
+  })
+
+
   function handleChange(e) {
-    value = e.detail.value
+    value = e.detail.value;
+    try {
+      localStorage.setItem('contract', value);
+    } catch(err) {}
   }
   
   const dispatch = createEventDispatcher();

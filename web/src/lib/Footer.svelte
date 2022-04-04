@@ -11,7 +11,7 @@
         <a href="/#private" class="link link-hover">Acuerdos privados</a>
         </div>
       <div><span class="footer-title">Links</span>
-        <a target="_blank" rel="noopener" href="https://github.com/saadeghi/daisyui"
+        <a target="_blank" rel="noopener" href="https://github.com/eugenioclrc/saul-goodman"
           class="group link link-hover">Github
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
             class="inline-block w-4 fill-current opacity-0 group-hover:opacity-50">

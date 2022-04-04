@@ -6,18 +6,17 @@
 
   import { Viewer } from 'bytemd'
   
-
   import { ipfs, init }	from '$lib/ipfs.ts';
   import { fade } from 'svelte/transition';
   
   import { onMount } from 'svelte';
   
-  import gfm from '@bytemd/plugin-gfm'
+//  import gfm from '@bytemd/plugin-gfm'
   
   let ipfsCid;
 
   const plugins = [
-    gfm(),
+    //gfm(),
     // Add more plugins here
   ]
   
@@ -26,7 +25,9 @@
 
   onMount(async () => {
     const url = new URL(window.location);
+    console.log(url)
     const params = new URLSearchParams(url.search);
+    console.log(params)
     ipfsCid = params.get('code');
     await init();
     // const data = await $ipfs.id();
@@ -49,9 +50,10 @@
     let chunks = [];
     // const data = await $ipfs.cat('QmUj8e4fgWpF7RT1XXJ1auFhqPaxqURmgZf8KZEeXPa55Y');
     // console.log('Data read back via ipfs.cat:', new TextDecoder().decode(data))
-    for await (const chunk of $ipfs.cat('QmUj8e4fgWpF7RT1XXJ1auFhqPaxqURmgZf8KZEeXPa55Y')) {
+    for await (const chunk of $ipfs.cat(ipfsCid)) {
       chunks.push(chunk);
     }
+    console.log(String(chunks))
     
     content = String(chunks);
   })

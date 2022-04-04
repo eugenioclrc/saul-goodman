@@ -23,7 +23,7 @@ class:sticky={ $page.url.pathname == '/'}
 		
 			<span class="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]" data-tip="GitHub">
 				<div class="flex-none items-center"><a aria-label="Github" target="_blank"
-						href="https://github.com/saadeghi/daisyui" rel="noopener"
+						href="https://github.com/eugenioclrc/saul-goodman" rel="noopener"
 						class="btn btn-ghost drawer-button btn-square normal-case"><svg width="20" height="20"
 							xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
 							class="inline-block h-5 w-5 fill-current md:h-6 md:w-6">
