@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run preview --prefix ./web",
-    "postinstall": "npm install --prefix ./web",
+    "install": "npm install --prefix ./web",
     "heroku-prebuild": "npm install && npm install --prefix ./web",
     "dev": "npm run dev --prefix ./web",
     "preview": "npm run preview --prefix ./web",
