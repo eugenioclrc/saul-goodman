@@ -48,14 +48,14 @@
         
 		const result = await $ipfs.add({ content: JSON.stringify({
         /// "description": "Friendly OpenSea Creature that enjoys long swims in the ocean.", 
-        "external_url": ipfsCid, 
+        "external_url": 'ipfs://'+String(ipfsCid), 
         // "image": "https://storage.googleapis.com/opensea-prod.appspot.com/puffs/3.png", 
         "name": "Contrato",
         // "attributes": [ ... ], 
       }) 
     });
 		
-    const tx = await contracts.contractSaulgoodman.mint(result.cid);
+    const tx = await contracts.contractSaulgoodman.mint('ipfs://'+String(result.cid));
     await tx.wait();
     alert("contrato minteado")
 
