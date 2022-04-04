@@ -1,0 +1,24 @@
+{
+  "name": "saulgoodman",
+  "version": "1.0.0",
+  "description": "<img src=\"https://github.com/eugenioclrc/saul-goodman/blob/main/cover.jpg?raw=true\" align=\"center\" />",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run preview --prefix ./web",
+    "postinstall": "npm install --prefix ./web",
+    "heroku-prebuild": "npm install && npm install --prefix ./web",
+    "dev": "npm run dev --prefix ./web",
+    "preview": "npm run preview --prefix ./web",
+    "build": "npm run build --prefix ./web"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugenioclrc/saul-goodman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugenioclrc/saul-goodman/issues"
+  },
+  "homepage": "https://github.com/eugenioclrc/saul-goodman#readme"
+}
