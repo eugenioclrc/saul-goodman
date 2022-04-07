@@ -6,7 +6,7 @@
           class="hero-content col-start-1 row-start-1 w-full max-w-7xl flex-col justify-between gap-10 pb-20 lg:flex-row lg:items-end lg:gap-0 xl:gap-20">
           <div class="lg:px-10 lg:pb-12">
             <h1 class="font-title mb-2 py-4 font-extrabold lg:py-10">
-              <div class="mb-2 text-5xl lg:text-7xl">SaulGooman</div>
+              <div class="mb-2 text-5xl lg:text-7xl">SaulGoodman</div>
               <div class="text-2xl lg:text-3xl">Un escribano opensource, gratuito y verificable<br />
                <!-- Algo mas?-->
               </div>
@@ -55,7 +55,7 @@
               <a href="/create-private" class="btn btn-ghost btn-active lg:btn-lg normal-case"><span
                   class="hidden sm:inline">Crear acuerdo privado</span>
                 <span class="inline sm:hidden">Acuerdo privado</span></a>
-              <a href="#how" class="btn lg:btn-lg normal-case">Como funciona?</a></div>
+              <a href="#how" class="btn lg:btn-lg normal-case">Cómo funciona?</a></div>
           </div>
         </div>
         <svg class="fill-secondary col-start-1 row-start-1 h-auto w-full" width="1600" height="595"
@@ -118,7 +118,7 @@
           <div>
             <h2 class="mt-20 mb-2 text-4xl font-extrabold md:text-6xl">Auditorias publicas</h2>
             <h3 class="mb-5 text-3xl font-bold">Contratos inmutables en IPFS</h3>
-            <p class="mx-auto mb-5 max-w-lg">Un NFT simboliza cada contratos y esta en la wallet de la entidad responsable.<br />
+            <p class="mx-auto mb-5 max-w-lg">Un NFT representa cada contrato y esta en la wallet de la entidad responsable.<br />
               El mismo no es transferible y si bien puede ser quemado, el registro de su existencia queda para siempre, juanto a la copia en IPFS.</p>
             <div class="my-20 flex flex-col">
               <a class="btn btn-primary rounded-full" href="/create-public">CREAR CONTRATO PUBLICO</a>
